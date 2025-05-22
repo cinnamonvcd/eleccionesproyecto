@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elección de Representante</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-gradient-to-br from-green-600 via-green-700 to-green-800 min-h-screen font-sans text-gray-100">
+  <header class="bg-white bg-opacity-20 backdrop-blur-md p-5 max-w-6xl mx-auto rounded-b-xl shadow-lg sticky top-0 z-50 flex gap-4 items-center">
+    <img src="imagenes/sena1.png" class="w-14 h-14 rounded-full border-2 border-green-400 shadow-md" alt="Logo Sena">
+    <div>
+      <h1 class="text-3xl font-extrabold text-white text-shadow">Centro de Teleinformática y Producción Industrial</h1>
+      <p class="text-green-300 font-medium mt-1">Elección de Representante de Aprendices</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="max-w-6xl mx-auto p-6">
+  </main>
+
+  <div id="contenedorFormularioInicioSesion" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+  <form id="formularioInicioSesion" class="bg-white text-gray-800 p-8 rounded-lg shadow-lg w-80 space-y-4">
+    <h2 class="text-xl font-bold text-center">Inicio de Sesión</h2>
+    <div>
+      <label for="usuario" class="block font-semibold">Usuario</label>
+      <input type="text" id="usuario" class="w-full p-2 border border-gray-300 rounded" required>
+    </div>
+    <div>
+      <label for="contrasena" class="block font-semibold">Contraseña</label>
+      <input type="password" id="contrasena" class="w-full p-2 border border-gray-300 rounded" required>
+    </div>
+    <div class="flex justify-between items-center">
+      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Ingresar</button>
+      <button type="button" id="cancelarInicioSesion" class="text-red-500 hover:underline">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+
+  <footer class="p-6 bg-green-900 flex justify-center items-center flex-col gap-4">
+    <button id="botonInicioSesion" class="bg-green-400 hover:bg-green-500 text-green-900 px-6 py-3 rounded-lg font-bold">Administrador</button>
+    <div id="controlesAdmin" class="hidden flex flex-col gap-4">
+      <button id="botonIniciarVotacion" class="bg-green-500 text-white px-4 py-2 rounded">Iniciar Votaciones</button>
+      <button id="botonCerrarVotacion" class="bg-red-500 text-white px-4 py-2 rounded" disabled>Cerrar Votaciones</button>
+      <button id="botonCerrarSesion" class="bg-gray-300 text-gray-900 px-4 py-2 rounded">Cerrar Sesión</button>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
